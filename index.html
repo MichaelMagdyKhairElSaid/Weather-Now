@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather Now</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg  mainColor py-5 ">
+    <div class="container w-75">
+     <div class="d-flex  "> 
+      <a class="navbar-brand text-white  d-flex  " href="#" id="WebsiteLogo"><img src="images/photos1.png" alt="image :D" class="img-fluid">
+        <div class="mx-3  ">
+          <h1 class="fs-6 m-0 fw-bolder">Weather</h1>
+          <p class="sub-title ">tagline goes here</p>
+        </div>
+      </a>
+     </div>
+    <button class="navbar-toggler text-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars text-white "></i>
+    </button>
+    <div class="collapse navbar-collapse mt-3 text-center " id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto  ">
+        <a class="nav-link  active mb-1" aria-current="page" href="#">Home</a>
+        <a class="nav-link text-capitalize mb-1" href="#">News</a>
+        <a class="nav-link text-capitalize mb-1" href="#">live cameras</a>
+        <a class="nav-link text-capitalize mb-1" href="#">photos</a>
+        <a class="nav-link text-capitalize mb-1" href="contact.html">contact</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <!-- content of page  -->
+  <header >
+<div class="container w-75 py-5">
+      <div class="  w-100 position-relative d-flex">
+        <input type="text" class="inputBar" placeholder="Find your location..." id="SearchInput">
+        <button class=" rounded-pill border-0 inputBarBtn" id="findCountryBtn" >Find</button>
+      </div>
+
+     <div class="container  my-5 tableFont" id="MainContent">                                                                                           
+        <!-- <div class="row rounded-3 second-color ">
+          <div class="col-lg-4 p-0 ">
+          <div class="table-header d-flex justify-content-between  p-2 rounded-start-3"><p class="m-0" id="Today">Friday</p><p class="m-0">21April</p></div>
+          <div class="p-4 ">
+            <h6 id="countryName">Cairo</h6>
+            <div class="d-flex align-items-center justify-content-between"><p class="d-inline-block " id="TodayTemp">24<sup>o</sup>C</p> <img src="images/sunAndcCoud.png" alt="image" id="todayTempImage"></div>
+           
+    <p class="text-info" id="todayondition">Partly cloudy</p>
+    <span class="me-2"><i class="fa-solid fa-umbrella me-1"></i>20%</span>
+    <span class="me-2"><i class="fa-solid fa-wind me-1"></i>18km/h</span>
+    <span class="me-2"><i class="fa-solid fa-compass me-1"></i>East</span>
+  </div>
+          </div>
+          <div class="col-lg-4 p-0 text-center" id="midTable">
+          <div id="midTableHeader" ><p class="m-0">Saturday</p></div>
+          <img src="images/sun.png" alt="" class="img-fluid my-4">
+          <p class="m-0 text-white fs-5 fw-bold">31.6<sup>o</sup>C</p>
+          <small >16.5<sup>o</sup></small>
+          <p class="text-info my-4">Sunny</p>
+          </div>
+          <div class="col-lg-4 p-0 text-center">
+            <div class="table-header p-2 rounded-end-3"><p class="m-0">Sunday</p></div>
+          <img src="images/sun.png" alt="" class="img-fluid my-4">
+          <p class="m-0 text-white fs-5 fw-bold">31.6<sup>o</sup>C</p>
+          <small >16.5<sup>o</sup></small>
+          <p class="text-info my-4">Sunny</p>
+          </div>
+     </div> -->
+       
+      </div>
+    </div> 
+  </header>
+  <!-- start of footer -->
+  <footer class="second-color ">
+    <div class="container w-75 ">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="container  py-4">
+            <div class="  w-100 position-relative d-flex mb-4 ">
+              <input type="text" class="inputBar" placeholder="enter your email to supscribe ...." >
+              <button class=" rounded-pill border-0 inputBarBtn" >Subscribe</button>
+            </div>
+            <p >Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+      <div class="col-lg-3 social-links">
+        
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+       
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/home.js"></script>
+</body>
+
+</html>

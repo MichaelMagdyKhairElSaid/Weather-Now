@@ -1,0 +1,123 @@
+:root{
+--main-color:#1E202B;
+--second-color:#323544;
+--blueColor:#009ad8;
+}
+body{
+    background-color: #1E202B;
+    color: rgba(255, 255, 255, 0.657) !important;
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+header{
+    background-image: url(../images/backGround.png);
+    height: 100%;
+ 
+    background-repeat: no-repeat;
+}
+
+/* --------------------------nav ------------------------------ */
+
+nav .navbar-nav a{
+    color: white !important; 
+    padding: 3px 25px !important;
+    margin: 0px 4px;
+   border: solid #1E202B 2px ;
+   border-radius: 30px;
+   font-size: 0.8rem;
+   font-weight: 400;
+}
+nav .navbar-nav a:hover{
+    border: solid var(--blueColor) 2px ;
+    border-radius: 30px;
+    color: var(--blueColor) !important;
+}
+nav .navbar-nav .active{
+    border: solid var(--blueColor) 2px ;
+    border-radius: 30px;
+    color: var(--blueColor) !important;
+}
+#WebsiteLogo{
+    width:100px;
+    height: 50px;
+}
+.sub-title{
+font-size: 0.7rem;
+font-weight: 300;
+opacity: 60%;
+}
+/* -----------input style in header ---------------*/
+.inputBar{
+border: 0px;
+border-radius: 30px;
+background-color: var(--main-color);
+width: 100%;
+padding: 14px   ;
+
+}
+
+.inputBarBtn{
+    position: absolute;
+    padding: 11px 30px;
+    top: 5px;
+    right: 5px;
+    COLOR: WHITE;
+    background-color: var(--blueColor);
+    font-size: 0.8rem;
+}
+
+/* ----------------------------table header colors----------------------------- */
+.table-header{
+    background-color: #2E2F3B;
+}
+.mainColor{
+    background-color: var(--main-color);
+}
+.second-color{
+background-color: var(--second-color);
+}
+.blueColor{
+    background-color: var(--blueColor);
+}
+/* table  */
+.tableFont{
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+#midTableHeader{
+background-color: #20222D;
+padding: 8px;
+}
+#midTable{
+background-color:rgba(0, 0, 0, 0.2) ;
+}
+#Temp{
+font-size: calc(90rem / 16);
+font-weight: 700;
+color: white
+}
+#TempImage{
+width: 90px;
+height: 90px;
+}
+
+/*-------------- foooter-------------------- */
+.social-links {
+    display: flex;
+
+}
+.social-links a{
+display: flex;
+width:  40px;
+height: 40px;
+background-color: #262936;
+color: var(--blueColor);
+justify-content: center;
+align-items: center;
+text-decoration: none;
+border-radius: 30px;
+margin: 30px 4px;
+transition: all 0.5s;
+}
+.social-links a:hover{
+color: white;
+background-color: var(--blueColor);
+}
