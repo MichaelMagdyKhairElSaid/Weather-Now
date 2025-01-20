@@ -21,6 +21,9 @@ findCountryBtn.addEventListener("click",displayTableContent)
 
 async function displayTableContent() {
     console.log(`SearchInput.textContent ==`+SearchInput.value);
+    if (SearchInput.value ==="") {
+        let forcastRes =await forecastAPI(cairo);
+    }
     let forcastRes =await forecastAPI(SearchInput.value);
     
     let todayDateInNum = forcastRes.location.localtime.split(" ",1);

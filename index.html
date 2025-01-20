@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <title>WeatherNow</title>
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -41,7 +42,7 @@
   <header >
 <div class="container w-75 py-5">
       <div class="  w-100 position-relative d-flex">
-        <input type="text" class="inputBar" placeholder="Find your location..." value="Cairo" id="SearchInput">
+        <input type="text" class="inputBar" placeholder="Find your location..." value="" id="SearchInput">
         <button class=" rounded-pill border-0 inputBarBtn" id="findCountryBtn"  >Find</button>
       </div>
 
