@@ -46,7 +46,7 @@ font-weight: 300;
 opacity: 60%;
 }
 #SearchInput::placeholder{
-    color: white;
+    color: rgba(255, 255, 255,0.3);
 }
 #SearchInput{
     color: white;

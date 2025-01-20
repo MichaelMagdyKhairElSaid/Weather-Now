@@ -7,7 +7,7 @@ let MainContent= document.querySelector("#MainContent")
 // let todayTempImage= document.querySelector("#todayTempImage")
 
 
-async function forcastAPI(country) {
+async function forecastAPI(country) {
 let result = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=cffac98264124b86ac250245232304&q=${country}&days=3&aqi=no&alerts=no`);
 let finalResult = await result.json();
 console.log(finalResult);
@@ -21,7 +21,7 @@ findCountryBtn.addEventListener("click",displayTableContent)
 
 async function displayTableContent() {
     console.log(`SearchInput.textContent ==`+SearchInput.value);
-    let forcastRes =await forcastAPI(SearchInput.value);
+    let forcastRes =await forecastAPI(SearchInput.value);
     
     let todayDateInNum = forcastRes.location.localtime.split(" ",1);
     console.log("todayDateInNum ="+todayDateInNum);
