@@ -8,7 +8,7 @@ let MainContent= document.querySelector("#MainContent")
 
 
 async function forecastAPI(country) {
-let result = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=cffac98264124b86ac250245232304&q=${country}&days=3&aqi=no&alerts=no`);
+let result = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=cffac98264124b86ac250245232304&q=${country}&days=3&aqi=no&alerts=no`);
 let finalResult = await result.json();
 console.log(finalResult);
 return finalResult
