@@ -45,6 +45,13 @@ font-size: 0.7rem;
 font-weight: 300;
 opacity: 60%;
 }
+#SearchInput::placeholder{
+    color: white;
+}
+#SearchInput{
+    color: white;
+    
+}
 /* -----------input style in header ---------------*/
 .inputBar{
 border: 0px;

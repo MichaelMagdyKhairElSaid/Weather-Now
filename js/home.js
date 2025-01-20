@@ -8,7 +8,7 @@ let MainContent= document.querySelector("#MainContent")
 
 
 async function forcastAPI(country) {
-let result = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=cffac98264124b86ac250245232304&q=Cairo&days=3&aqi=no&alerts=no`);
+let result = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=cffac98264124b86ac250245232304&q=${country}&days=3&aqi=no&alerts=no`);
 let finalResult = await result.json();
 console.log(finalResult);
 return finalResult
@@ -20,18 +20,16 @@ displayTableContent()
 findCountryBtn.addEventListener("click",displayTableContent)
 
 async function displayTableContent() {
-    console.log(`SearchInput.textContent`+SearchInput.textContent);
-    let forcastRes =await forcastAPI(SearchInput.textContent);
+    console.log(`SearchInput.textContent ==`+SearchInput.value);
+    let forcastRes =await forcastAPI(SearchInput.value);
     
-
     let todayDateInNum = forcastRes.location.localtime.split(" ",1);
     console.log("todayDateInNum ="+todayDateInNum);
-    
     console.log("today ="+getWeakday(todayDateInNum));
     console.log("tomorrow ="+getWeakday(todayDateInNum,1));
     console.log("after tomorrow ="+getWeakday(todayDateInNum,2));
     console.log("after tomorrow ="+forcastRes.forecast.forecastday[0].day.daily_chance_of_rain);
-    
+    console.log(forcastRes.location.name);
 
 
     let TableContent=`                                                                                          
